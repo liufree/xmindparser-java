@@ -29,13 +29,7 @@
             <version>1.20</version>
         </dependency>
 
-        <!--xml to java object-->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-digester3</artifactId>
-            <version>3.2</version>
-            <classifier>with-deps</classifier>
-        </dependency>
+
         <dependency>
             <groupId>org.dom4j</groupId>
             <artifactId>dom4j</artifactId>

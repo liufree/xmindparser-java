@@ -38,7 +38,6 @@ public class ZipUtils {
                 if (subFileNames.contains(res[i])) {
                     String s = destFilePath + "/" + res[i];
                     String content = getFileContent(s);
-                    System.out.println(content);
                     map.put(res[i], content);
                 }
             }
@@ -90,7 +89,7 @@ public class ZipUtils {
         return stringBuffer.toString();
     }
 
-    public static void main(String[] args) throws IOException, ArchiveException {
+    /*public static void main(String[] args) throws IOException, ArchiveException {
         String fileName = "doc/XmindZen解析.xmind";
         List<String> list= new ArrayList<>();
    //     list.add("comments.xml");
@@ -98,5 +97,5 @@ public class ZipUtils {
         System.out.println(File.separator);
       //  System.out.println(getContents(list, fileName));
     }
-
+*/
 }

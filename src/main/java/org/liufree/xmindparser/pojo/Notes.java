@@ -1,7 +1,8 @@
 /**
   * Copyright 2020 bejson.com 
   */
-package org.liufree.xmindparser.json;
+package org.liufree.xmindparser.pojo;
+
 import lombok.Data;
 
 /**
@@ -11,10 +12,9 @@ import lombok.Data;
  * @website http://www.bejson.com/java2pojo/
  */
 @Data
-public class JsonRootBean {
+public class Notes {
 
-    private String id;
-    private String title;
-    private RootTopic rootTopic;
+    private String content;
+
 
 }

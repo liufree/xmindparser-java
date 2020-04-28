@@ -1,7 +1,7 @@
 /**
   * Copyright 2020 bejson.com 
   */
-package org.liufree.xmindparser.json;
+package org.liufree.xmindparser.pojo;
 import lombok.Data;
 
 import java.util.List;
@@ -13,13 +13,14 @@ import java.util.List;
  * @website http://www.bejson.com/java2pojo/
  */
 @Data
-public class Attached {
+public class RootTopic {
 
     private String id;
     private String title;
     private Notes notes;
     private List<Comments> comments;
     private Children children;
+
 
 
 }

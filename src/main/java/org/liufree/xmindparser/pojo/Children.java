@@ -1,7 +1,7 @@
 /**
   * Copyright 2020 bejson.com 
   */
-package org.liufree.xmindparser.json;
+package org.liufree.xmindparser.pojo;
 import lombok.Data;
 
 import java.util.List;
