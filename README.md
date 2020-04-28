@@ -40,6 +40,8 @@ mvn clean install
     <version>0.0.1</version>
 </dependency>
 ```
+## 脑图截图
+![脑图截图](doc/xmind8.png)
     
 ## 返回结果
 该json格式对应的java实体为JsonRootBean
