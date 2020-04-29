@@ -35,7 +35,7 @@ mvn clean install
 3. 其他项目pom.xml文件中加上依赖
 ```
 <dependency>
-    <groupId>org.liufree</groupId>
+    <groupId>com.github.liufree</groupId>
     <artifactId>xmindparser-java</artifactId>
     <version>0.0.1</version>
 </dependency>
