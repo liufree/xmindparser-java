@@ -1,13 +1,10 @@
 package org.liufree.xmindparser;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.JSONPath;
 import org.dom4j.DocumentException;
 
 import java.io.IOException;
-import java.util.List;
 
 /**
  * @author liufree liufreeo@gmail.com

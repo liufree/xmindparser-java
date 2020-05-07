@@ -8,6 +8,7 @@ import org.apache.commons.compress.archivers.examples.Expander;
 import org.apache.commons.compress.utils.IOUtils;
 
 import java.io.*;
+import java.nio.file.FileSystem;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
@@ -36,7 +37,7 @@ public class ZipUtils {
             String[] res = destFile.list(new FileFilter());
             for (int i = 0; i < Objects.requireNonNull(res).length; i++) {
                 if (subFileNames.contains(res[i])) {
-                    String s = destFilePath + "/" + res[i];
+                    String s = destFilePath + File.separator + res[i];
                     String content = getFileContent(s);
                     map.put(res[i], content);
                 }
@@ -55,8 +56,9 @@ public class ZipUtils {
     public static String extract(String fileName) throws IOException, ArchiveException {
         File file = new File(fileName);
         Expander expander = new Expander();
-        String fileDir = fileName.substring(fileName.lastIndexOf("/") + 1, fileName.lastIndexOf("."));
-        String destFileName = file.getParent() + "/" + fileDir; //目标文件夹名字
+
+        String fileDir = fileName.substring(fileName.lastIndexOf( File.separator) + 1, fileName.lastIndexOf("."));
+        String destFileName = file.getParent() + File.separator + fileDir; //目标文件夹名字
         expander.expand(file, new File(destFileName));
         return destFileName;
     }

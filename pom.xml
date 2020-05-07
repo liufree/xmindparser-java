@@ -6,7 +6,7 @@
 
     <groupId>com.github.liufree</groupId>
     <artifactId>xmindparser-java</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <description>解析xmind为json文件，支持xmind8和xmind zen类型，返回统一格式</description>
 
@@ -29,7 +29,13 @@
             <version>1.20</version>
         </dependency>
 
-
+        <!--xml to java object-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-digester3</artifactId>
+            <version>3.2</version>
+            <classifier>with-deps</classifier>
+        </dependency>
         <dependency>
             <groupId>org.dom4j</groupId>
             <artifactId>dom4j</artifactId>
