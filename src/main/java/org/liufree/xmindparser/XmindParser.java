@@ -35,9 +35,9 @@ public class XmindParser {
 
         String content = null;
         if (isXmindZen(res, xmindFile)) {
-            content = getXmindZenContent(xmindFile);
+            content = getXmindZenContent(xmindFile,res);
         } else {
-            content = getXmindLegacyContent(xmindFile);
+            content = getXmindLegacyContent(xmindFile,res);
         }
 
         //删除生成的文件夹
@@ -76,10 +76,10 @@ public class XmindParser {
     /**
      * @return
      */
-    public static String getXmindZenContent(String xmindFile) throws IOException, ArchiveException {
+    public static String getXmindZenContent(String xmindFile,String extractFileDir) throws IOException, ArchiveException {
         List<String> keys = new ArrayList<>();
         keys.add(xmindZenJson);
-        Map<String, String> map = ZipUtils.getContents(keys, xmindFile);
+        Map<String, String> map = ZipUtils.getContents(keys, xmindFile,extractFileDir);
         String content = map.get(xmindZenJson);
         content = content.substring(1, content.lastIndexOf("]"));
         content = XmindZen.getContent(content);
@@ -89,11 +89,11 @@ public class XmindParser {
     /**
      * @return
      */
-    public static String getXmindLegacyContent(String xmindFile) throws IOException, ArchiveException, DocumentException {
+    public static String getXmindLegacyContent(String xmindFile,String extractFileDir) throws IOException, ArchiveException, DocumentException {
         List<String> keys = new ArrayList<>();
         keys.add(xmindLegacyContent);
         keys.add(xmindLegacyComments);
-        Map<String, String> map = ZipUtils.getContents(keys, xmindFile);
+        Map<String, String> map = ZipUtils.getContents(keys, xmindFile,extractFileDir);
 
         String contentXml = map.get(xmindLegacyContent);
         String commentsXml = map.get(xmindLegacyComments);

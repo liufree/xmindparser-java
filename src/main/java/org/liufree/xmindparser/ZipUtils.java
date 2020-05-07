@@ -21,6 +21,7 @@ import java.util.*;
  */
 public class ZipUtils {
 
+    private static final String currentPath = System.getProperty("user.dir");
 
     /**
      * 找到压缩文件中匹配的子文件，返回的为
@@ -29,8 +30,8 @@ public class ZipUtils {
      * @param subFileNames
      * @param fileName
      */
-    public static Map<String,String> getContents(List<String> subFileNames, String fileName) throws IOException, ArchiveException {
-        String destFilePath = fileName.substring(0, fileName.lastIndexOf("."));
+    public static Map<String,String> getContents(List<String> subFileNames, String fileName,String extractFileDir) throws IOException, ArchiveException {
+        String destFilePath =extractFileDir;
         Map<String,String> map = new HashMap<>();
         File destFile = new File(destFilePath);
         if (destFile.isDirectory()) {
@@ -56,9 +57,7 @@ public class ZipUtils {
     public static String extract(String fileName) throws IOException, ArchiveException {
         File file = new File(fileName);
         Expander expander = new Expander();
-
-        String fileDir = fileName.substring(fileName.lastIndexOf( File.separator) + 1, fileName.lastIndexOf("."));
-        String destFileName = file.getParent() + File.separator + fileDir; //目标文件夹名字
+        String destFileName =currentPath +File.separator+ "XMind"+System.currentTimeMillis(); //目标文件夹名字
         expander.expand(file, new File(destFileName));
         return destFileName;
     }
