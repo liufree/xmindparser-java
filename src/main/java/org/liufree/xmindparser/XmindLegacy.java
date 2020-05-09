@@ -73,7 +73,8 @@ public class XmindLegacy {
         for (Node node : topicList) {
             node.setName("attached");
         }
-        Element sheet = root.element("sheet");
+        //选取第一个sheet
+        Element sheet = root.elements("sheet").get(0);
         String res = sheet.asXML();
         //将xml转为json
         JSONObject xmlJSONObj = XML.toJSONObject(res);

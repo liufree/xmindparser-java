@@ -37,7 +37,7 @@ public class XmindZen {
      * @throws DocumentException
      */
     public static String getContent(String jsonContent) {
-        JSONObject jsonObject = JSONObject.parseObject(jsonContent);
+        JSONObject jsonObject = JSONArray.parseArray(jsonContent).getJSONObject(0);
         JSONObject rootTopic = jsonObject.getJSONObject("rootTopic");
         transferNotes(rootTopic);
         JSONObject children = rootTopic.getJSONObject("children");

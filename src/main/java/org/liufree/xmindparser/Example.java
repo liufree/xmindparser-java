@@ -17,7 +17,7 @@ public class Example {
 
     public static void main(String[] args) throws DocumentException, ArchiveException, IOException {
        // String fileName = "doc/XmindZen解析.xmind";
-        String fileName = "doc/XmindZen解析.xmind";
+        String fileName = "doc/Xmind8解析.xmind";
         String res = XmindParser.parseJson(fileName);
         System.out.println(res);
 

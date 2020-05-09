@@ -81,7 +81,8 @@ public class XmindParser {
         keys.add(xmindZenJson);
         Map<String, String> map = ZipUtils.getContents(keys, xmindFile,extractFileDir);
         String content = map.get(xmindZenJson);
-        content = content.substring(1, content.lastIndexOf("]"));
+       // content = content.substring(1, content.lastIndexOf("]"));
+
         content = XmindZen.getContent(content);
         return content;
     }
