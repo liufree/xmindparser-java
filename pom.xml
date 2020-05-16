@@ -21,7 +21,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
-            <optional>true</optional>
+            <optional>provided</optional>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>

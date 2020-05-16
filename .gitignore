@@ -2,3 +2,12 @@
 target
 xmindparser-java.iml
 .idea
+
+.vscode
+.history
+.DS_Store
+.project
+.classpath
+.factorypath
+.settings
+
