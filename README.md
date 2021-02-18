@@ -1,38 +1,46 @@
 # xmindparser-java
-- xmind解析为json，对象，
-- 支持新版xmindzen，旧版xmind8
-- 支持旧版中xml的comments批注转换
+
+- xmind 解析为 json，对象，
+- 支持新版 xmindzen，旧版 xmind8
+- 支持旧版中 xml 的 comments 批注转换
 - 代码简单易使用
-- 剔除多余节点，简化Notes节点，title节点
+- 剔除多余节点，简化 Notes 节点，title 节点
 
+## 使用例子 wy
 
-## 使用例子
-- 传入一个文件路径，返回的即为组合后的json字符串
+- 传入一个文件路径，返回的即为组合后的 json 字符串
+
 ```
     //传入一个文件路径，返回的即为组合后的json字符串
   String fileName = "doc/Xmind8解析.xmind";
   String res = XmindParser.parseJson(fileName);
 ```
-- 返回的是java对象JsonRootBean
+
+- 返回的是 java 对象 JsonRootBean
+
 ```
   System.out.println(res);
   Object root = XmindParser.parseObject(fileName);
   System.out.println(root);
 ```
 
-
 ## 引用的包
-1.  commons-compress,用于解压xmind
-2.  dom4j，用于解析xml
-3.  jaxen，用于支持dom4j的xpath方法
+
+1.  commons-compress,用于解压 xmind
+2.  dom4j，用于解析 xml
+3.  jaxen，用于支持 dom4j 的 xpath 方法
 
 ## 如何使用
-1. clone本项目
+
+1. clone 本项目
 2. 编译
+
 ```
 mvn clean install
 ```
-3. 其他项目pom.xml文件中加上依赖
+
+3. 其他项目 pom.xml 文件中加上依赖
+
 ```
 <dependency>
     <groupId>com.github.liufree</groupId>
@@ -40,11 +48,15 @@ mvn clean install
     <version>0.0.1</version>
 </dependency>
 ```
+
 ## 脑图截图
+
 ![脑图截图](doc/xmind8.png)
-    
+
 ## 返回结果
-该json格式对应的java实体为JsonRootBean
+
+该 json 格式对应的 java 实体为 JsonRootBean
+
 ```
 {
   "id": "7tbab3gajrm5omk2bjpnn5rg6c",
@@ -185,4 +197,5 @@ mvn clean install
 ```
 
 ## 结语
+
 嗯，有那个味了，继续加油，化知识为力量
