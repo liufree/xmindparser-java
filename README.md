@@ -27,6 +27,15 @@
 3.  jaxen，用于支持dom4j的xpath方法
 
 ## 如何使用
+pom.xml加上
+```
+<dependency>
+    <groupId>com.github.liufree</groupId>
+    <artifactId>xmindparser-java</artifactId>
+    <version>0.0.3</version>
+</dependency>
+```
+## 或者
 1. clone本项目
 2. 编译
 ```
@@ -40,6 +49,7 @@ mvn clean install
     <version>0.0.3</version>
 </dependency>
 ```
+
 ## 脑图截图
 ![脑图截图](doc/xmind8.png)
     
