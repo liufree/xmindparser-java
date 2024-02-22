@@ -37,7 +37,7 @@ mvn clean install
 <dependency>
     <groupId>com.github.liufree</groupId>
     <artifactId>xmindparser-java</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 ## 脑图截图
