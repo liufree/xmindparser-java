@@ -9,9 +9,9 @@ import java.util.List;
 
 /**
  * @author liufree liufreeo@gmail.com
- * @Classname XmindLegacy
- * @Description TODO
- * @Date 2020/4/28 10:26
+ * XmindLegacy
+ *  TODO
+ * 2020/4/28 10:26
  */
 public class XmindLegacy {
 

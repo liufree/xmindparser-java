@@ -2,13 +2,15 @@ package org.liufree.xmindparser;
 
 import org.apache.commons.compress.archivers.ArchiveException;
 import org.dom4j.DocumentException;
+import org.liufree.xmindparser.XmindParser;
+
 import java.io.IOException;
 
 /**
  * @author liufree liufreeo@gmail.com
- * @Classname Example
- * @Description 测试例子
- * @Date 2020/4/28 13:12
+ * Example
+ *  测试例子
+ * 2020/4/28 13:12
  */
 public class Example {
 

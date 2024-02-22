@@ -15,9 +15,9 @@ import org.liufree.xmindparser.pojo.JsonRootBean;
 
 /**
  * @author liufree liufreeo@gmail.com
- * @Classname XmindParser
- * @Description 解析主体
- * @Date 2020/4/27 14:05
+ * XmindParser
+ *  解析主体
+ * 2020/4/27 14:05
  */
 public class XmindParser {
     public static final String xmindZenJson = "content.json";

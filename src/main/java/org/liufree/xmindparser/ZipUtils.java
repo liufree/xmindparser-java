@@ -15,9 +15,9 @@ import org.apache.commons.compress.archivers.examples.Expander;
 
 /**
  * @author liufree
- * @Classname ZipUtil
- * @Description zip解压工具
- * @Date 2020/4/14 15:39
+ * ZipUtil
+ *  zip解压工具
+ * 2020/4/14 15:39
  */
 public class ZipUtils {
 
