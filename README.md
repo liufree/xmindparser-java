@@ -32,7 +32,7 @@ pom.xml加上
 <dependency>
     <groupId>com.github.liufree</groupId>
     <artifactId>xmindparser-java</artifactId>
-    <version>0.0.3</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 ## 或者
@@ -46,7 +46,7 @@ mvn clean install
 <dependency>
     <groupId>com.github.liufree</groupId>
     <artifactId>xmindparser-java</artifactId>
-    <version>0.0.3</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 
