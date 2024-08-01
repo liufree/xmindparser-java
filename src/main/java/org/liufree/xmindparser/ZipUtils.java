@@ -85,7 +85,7 @@ public class ZipUtils {
         BufferedReader bufferedReder = new BufferedReader(fileReader);
         StringBuilder stringBuffer = new StringBuilder();
         while (bufferedReder.ready()) {
-            stringBuffer.append(bufferedReder.readLine());
+            stringBuffer.append(bufferedReder.readLine()).append("\n");
         }
         //打开的文件需关闭，在unix下可以删除，否则在windows下不能删除（file.delete())
         bufferedReder.close();
